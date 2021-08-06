@@ -1,0 +1,134 @@
+Select both FPGA and CPU checker
+----------------------------------------------------------------
+ NOTICE: The people.csv included in the repo has been tailored.
+ To download full deny-list for hardware test, please refer to
+ the README file in data folder.
+----------------------------------------------------------------
+Loading people.csv...completed
+Loading stopkeywords.csv...completed
+Loading entities.csv...completed
+Loading BIC_ref_data.csv...completed
+All watch-lists have been loaded.
+Pre-sorting...completed
+Transaction-7, length of Field<bank1> is 54 and this field will be truncate to 35
+Transaction-37, length of Field<bank1> is 52 and this field will be truncate to 35
+Transaction-38, length of Field<bank1> is 36 and this field will be truncate to 35
+Transaction-44, length of Field<bank1> is 36 and this field will be truncate to 35
+Transaction-62, length of Field<bank1> is 38 and this field will be truncate to 35
+
+Transaction Id, OK/KO, Field of match, Time taken(:ms)
+0,OK,,0.869000
+1,OK,,0.612000
+2,OK,,0.612000
+3,OK,,0.623000
+4,OK,,0.645000
+5,OK,,0.618000
+6,OK,,0.599000
+7,KO,SwiftCode:Entity:,0.694000
+8,OK,,0.618000
+9,OK,,0.603000
+10,OK,,0.650000
+11,OK,,0.676000
+12,KO,SwiftCode::,0.630000
+13,OK,,0.668000
+14,OK,,0.654000
+15,KO,SwiftCode::,0.652000
+16,OK,,0.665000
+17,KO,SwiftCode:Entity:,0.715000
+18,OK,,0.638000
+19,OK,,0.601000
+20,OK,,0.640000
+21,OK,,0.643000
+22,OK,,0.654000
+23,KO,SwiftCode:Entity:,0.640000
+24,OK,,0.616000
+25,KO,SwiftCode::,0.669000
+26,OK,,0.651000
+27,OK,,0.670000
+28,OK,,0.634000
+29,OK,,0.690000
+30,OK,,0.602000
+31,OK,,0.599000
+32,KO,SwiftCode:Entity:,0.585000
+33,OK,,0.595000
+34,OK,,0.654000
+35,OK,,0.607000
+36,OK,,0.615000
+37,KO,SwiftCode::,0.584000
+38,KO,SwiftCode:Entity:,0.619000
+39,OK,,0.601000
+40,OK,,0.571000
+41,OK,,0.641000
+42,OK,,0.564000
+43,OK,,0.614000
+44,KO,SwiftCode:Entity:,0.606000
+45,OK,,0.643000
+46,OK,,0.578000
+47,OK,,0.580000
+48,OK,,0.589000
+49,OK,,0.594000
+50,OK,,0.649000
+51,KO,SwiftCode::,0.600000
+52,OK,,0.638000
+53,OK,,0.606000
+54,OK,,0.611000
+55,OK,,0.601000
+56,KO,SwiftCode::,0.668000
+57,OK,,0.628000
+58,OK,,0.641000
+59,OK,,0.623000
+60,OK,,0.603000
+61,OK,,0.642000
+62,KO,SwiftCode::,0.610000
+63,OK,,0.618000
+64,OK,,0.623000
+65,OK,,0.615000
+66,OK,,0.634000
+67,OK,,0.586000
+68,OK,,0.610000
+69,OK,,0.629000
+70,OK,,0.615000
+71,OK,,0.576000
+72,KO,SwiftCode::,0.593000
+73,OK,,0.598000
+74,OK,,0.653000
+75,OK,,0.622000
+76,OK,,0.599000
+77,OK,,0.600000
+78,OK,,0.594000
+79,OK,,0.650000
+80,OK,,0.631000
+81,OK,,0.566000
+82,OK,,0.627000
+83,OK,,0.630000
+84,OK,,0.613000
+85,OK,,0.610000
+86,KO,SwiftCode:Entity:,0.635000
+87,OK,,0.601000
+88,OK,,0.641000
+89,OK,,0.602000
+90,OK,,0.612000
+91,OK,,0.633000
+92,KO,SwiftCode::,0.616000
+93,OK,,0.634000
+94,OK,,0.637000
+95,OK,,0.589000
+96,OK,,0.606000
+97,OK,,0.604000
+98,OK,,0.608000
+99,OK,,0.638000
+
+For FPGA, 100 transactions were processed.
+Min(ms)		Max(ms)		Avg(ms)
+----------------------------------------
+0.564		0.869		0.62458
+----------------------------------------
+
+Start to check...
+
+For CPU, 100 transactions were processed.
+Min(ms)		Max(ms)		Avg(ms)
+----------------------------------------
+3.508		11.472		5.67495
+----------------------------------------
+Check passed!
