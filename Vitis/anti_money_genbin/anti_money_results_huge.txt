@@ -1,0 +1,134 @@
+Select both FPGA and CPU checker
+----------------------------------------------------------------
+ NOTICE: The people.csv included in the repo has been tailored.
+ To download full deny-list for hardware test, please refer to
+ the README file in data folder.
+----------------------------------------------------------------
+Loading people.csv...completed
+Loading stopkeywords.csv...completed
+Loading entities.csv...completed
+Loading BIC_ref_data.csv...completed
+All watch-lists have been loaded.
+Pre-sorting...completed
+Transaction-7, length of Field<bank1> is 54 and this field will be truncate to 35
+Transaction-37, length of Field<bank1> is 52 and this field will be truncate to 35
+Transaction-38, length of Field<bank1> is 36 and this field will be truncate to 35
+Transaction-44, length of Field<bank1> is 36 and this field will be truncate to 35
+Transaction-62, length of Field<bank1> is 38 and this field will be truncate to 35
+
+Transaction Id, OK/KO, Field of match, Time taken(:ms)
+0,OK,,9.364000
+1,OK,,8.191000
+2,OK,,9.094000
+3,OK,,9.402000
+4,OK,,9.639000
+5,OK,,8.900000
+6,OK,,8.193000
+7,KO,SwiftCode:Entity:Sender,12.772000
+8,OK,,7.623000
+9,KO,Sender,9.614000
+10,OK,,9.812000
+11,OK,,9.597000
+12,KO,SwiftCode::,9.619000
+13,OK,,9.473000
+14,OK,,9.485000
+15,KO,SwiftCode::,7.578000
+16,OK,,8.904000
+17,KO,SwiftCode:Entity:Sender,12.666000
+18,OK,,9.825000
+19,OK,,7.568000
+20,OK,,7.870000
+21,OK,,9.843000
+22,OK,,12.865000
+23,KO,SwiftCode:Entity:Sender,7.909000
+24,OK,,9.104000
+25,KO,SwiftCode::,12.582000
+26,OK,,9.594000
+27,KO,Sender,9.442000
+28,OK,,7.872000
+29,OK,,9.620000
+30,OK,,9.468000
+31,OK,,7.871000
+32,KO,SwiftCode:Entity:Sender,7.862000
+33,OK,,9.583000
+34,OK,,9.612000
+35,OK,,7.882000
+36,OK,,9.773000
+37,KO,SwiftCode::,9.312000
+38,KO,SwiftCode:Entity:,9.540000
+39,OK,,9.588000
+40,KO,Sender,7.882000
+41,KO,Sender,9.801000
+42,OK,,7.679000
+43,OK,,8.085000
+44,KO,SwiftCode:Entity:Sender,11.325000
+45,OK,,9.637000
+46,OK,,9.443000
+47,OK,,7.978000
+48,OK,,8.902000
+49,OK,,7.988000
+50,OK,,9.782000
+51,KO,SwiftCode::,9.032000
+52,OK,,9.451000
+53,OK,,9.531000
+54,OK,,9.734000
+55,OK,,9.405000
+56,KO,SwiftCode::,9.780000
+57,OK,,8.107000
+58,KO,Sender,9.449000
+59,OK,,9.774000
+60,OK,,8.902000
+61,OK,,9.807000
+62,KO,SwiftCode::,8.927000
+63,OK,,9.845000
+64,OK,,9.660000
+65,OK,,7.893000
+66,KO,Sender,9.433000
+67,OK,,8.160000
+68,KO,Sender,7.760000
+69,OK,,9.104000
+70,OK,,9.592000
+71,OK,,8.100000
+72,KO,SwiftCode::,9.524000
+73,OK,,7.874000
+74,OK,,9.613000
+75,OK,,7.923000
+76,OK,,9.330000
+77,OK,,7.950000
+78,OK,,9.311000
+79,KO,Sender,12.669000
+80,OK,,9.770000
+81,OK,,5.573000
+82,OK,,9.565000
+83,KO,Sender,9.478000
+84,KO,Sender,9.802000
+85,KO,Sender,9.506000
+86,KO,SwiftCode:Entity:,7.942000
+87,OK,,7.899000
+88,OK,,9.609000
+89,OK,,9.490000
+90,OK,,9.609000
+91,KO,Sender,9.793000
+92,KO,SwiftCode::,8.939000
+93,OK,,9.827000
+94,OK,,9.605000
+95,OK,,7.928000
+96,OK,,9.138000
+97,OK,,9.502000
+98,KO,Sender,9.517000
+99,OK,,9.098000
+
+For FPGA, 100 transactions were processed.
+Min(ms)		Max(ms)		Avg(ms)
+----------------------------------------
+5.573		12.865		9.20243
+----------------------------------------
+
+Start to check...
+
+For CPU, 100 transactions were processed.
+Min(ms)		Max(ms)		Avg(ms)
+----------------------------------------
+86.597		837.62		318.973
+----------------------------------------
+Check passed!
