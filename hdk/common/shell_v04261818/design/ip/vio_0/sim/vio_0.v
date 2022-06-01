@@ -75,12 +75,3 @@ output reg [15 : 0] probe_out6 = 'h0000 ;
 
 endmodule
 
-module test (
-clk,
-test1
-);
-
-input clk;
-input test1;
-
-endmodule

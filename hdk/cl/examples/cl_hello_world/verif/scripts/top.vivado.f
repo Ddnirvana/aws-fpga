@@ -62,7 +62,7 @@ ${HDK_SHELL_DESIGN_DIR}/ip/axi_clock_converter_0/hdl/fifo_generator_v13_2_rfs.v
 ${SH_LIB_DIR}/../ip/axi_clock_converter_0/sim/axi_clock_converter_0.v
 ${CL_ROOT}/design/cl_hello_world.sv
 
-${CL_ROOT}/design/wujian_soc/test.v
+${CL_ROOT}/design/test.sv
 
 -f ${HDK_COMMON_DIR}/verif/tb/filelists/tb.${SIMULATOR}.f
 

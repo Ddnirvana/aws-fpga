@@ -1393,12 +1393,3 @@ vio_v3_0_17_vio #(
 )/* synthesis syn_noprune=1 */;
 endmodule
 
-module test (
-clk,
-test1
-);
-
-input clk;
-input test1;
-
-endmodule
