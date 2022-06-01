@@ -35,11 +35,6 @@ file copy -force $CL_DIR/design/cl_hello_world_defines.vh             $TARGET_DI
 file copy -force $CL_DIR/design/cl_id_defines.vh                      $TARGET_DIR
 file copy -force $CL_DIR/design/cl_hello_world.sv                     $TARGET_DIR 
 file copy -force $CL_DIR/../common/design/cl_common_defines.vh        $TARGET_DIR
-
-file copy -force $CL_DIR/design/wujian_soc/params/*.vh                $TARGET_DIR
-file copy -force $CL_DIR/design/wujian_soc/sim_lib/*.v                $TARGET_DIR
-file copy -force $CL_DIR/design/wujian_soc/*.v                        $TARGET_DIR
-
 file copy -force $UNUSED_TEMPLATES_DIR/unused_apppf_irq_template.inc  $TARGET_DIR
 file copy -force $UNUSED_TEMPLATES_DIR/unused_cl_sda_template.inc     $TARGET_DIR
 file copy -force $UNUSED_TEMPLATES_DIR/unused_ddr_a_b_d_template.inc  $TARGET_DIR
@@ -48,6 +43,52 @@ file copy -force $UNUSED_TEMPLATES_DIR/unused_dma_pcis_template.inc   $TARGET_DI
 file copy -force $UNUSED_TEMPLATES_DIR/unused_pcim_template.inc       $TARGET_DIR
 file copy -force $UNUSED_TEMPLATES_DIR/unused_sh_bar1_template.inc    $TARGET_DIR
 file copy -force $UNUSED_TEMPLATES_DIR/unused_flr_template.inc        $TARGET_DIR
+
+file copy -force $CL_DIR/design/wujian_soc/wujian100_open_fpga_top.v $TARGET_DIR
+
+file copy -force $CL_DIR/design/wujian_soc/params/apb0_params.vh $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/params/apb1_params.vh $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/params/timers_params.vh $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/params/wdt_params.vh $TARGET_DIR
+
+file copy -force $CL_DIR/design/wujian_soc/sim_lib/PAD_DIG_IO.v $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/sim_lib/PAD_OSC_IO.v $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/sim_lib/STD_CELL.v $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/sim_lib/fpga_byte_spram.v $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/sim_lib/fpga_spram.v $TARGET_DIR
+
+file copy -force $CL_DIR/design/wujian_soc/ahb_matrix_top.v $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/smu_top.v $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/sms.v $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/ls_sub_top.v $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/retu_top.v $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/tim5.v $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/tim.v $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/dmac.v $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/pdu_top.v $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/tim2.v $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/usi1.v $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/aou_top.v $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/matrix.v $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/dummy.v $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/pwm.v $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/usi0.v $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/apb0_sub_top.v $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/common.v $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/wdt.v $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/tim1.v $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/rtc.v $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/E902_20191018.v $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/tim7.v $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/apb0.v $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/apb1_sub_top.v $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/gpio0.v $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/tim4.v $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/tim3.v $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/clkgen.v $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/core_top.v $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/tim6.v $TARGET_DIR
+file copy -force $CL_DIR/design/wujian_soc/apb1.v $TARGET_DIR
 
 #---- End of section replaced by Developr ---
 
