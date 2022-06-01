@@ -21,6 +21,7 @@
 
 -y ${CL_ROOT}/../common/design
 -y ${CL_ROOT}/design
+-y ${CL_ROOT}/design/wujian_soc
 -y ${CL_ROOT}/verif/sv
 -y ${SH_LIB_DIR}
 -y ${SH_INF_DIR}
@@ -30,6 +31,7 @@
 
 +incdir+${CL_ROOT}/../common/design
 +incdir+${CL_ROOT}/design
++incdir+${CL_ROOT}/design/wujian_soc
 +incdir+${CL_ROOT}/verif/sv
 +incdir+${SH_LIB_DIR}
 +incdir+${SH_INF_DIR}
