@@ -1,9 +1,13 @@
 module test (
 clk,
-test1
+test_input,
+test_output,
+test_inout
 );
 
 input clk;
-inout test1;
+input test_input;
+output test_output;
+inout test_inout;
 
 endmodule

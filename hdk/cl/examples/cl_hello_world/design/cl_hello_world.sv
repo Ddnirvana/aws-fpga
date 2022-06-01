@@ -157,7 +157,9 @@ always_ff @(negedge rst_main_n or posedge clk_main_a0)
 
   test test1(
       .clk (clk_main_a0),
-      .test1 (clk_main_a0)
+      .test_input (clk_main_a0),
+      .test_output (clk_main_a0),
+      .test_inout (clk_main_a0)
   );
 
 //--------------------------------------------------------------
