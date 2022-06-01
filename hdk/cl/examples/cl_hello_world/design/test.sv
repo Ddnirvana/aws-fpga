@@ -4,6 +4,6 @@ test1
 );
 
 input clk;
-input test1;
+inout test1;
 
 endmodule
