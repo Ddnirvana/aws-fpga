@@ -1,6 +1,6 @@
 module test (
 clk,
-test_input,
+test_input
 );
 
 input clk;
