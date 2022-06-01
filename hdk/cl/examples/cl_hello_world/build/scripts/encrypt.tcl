@@ -90,6 +90,8 @@ file copy -force $CL_DIR/design/wujian_soc/core_top.v $TARGET_DIR
 file copy -force $CL_DIR/design/wujian_soc/tim6.v $TARGET_DIR
 file copy -force $CL_DIR/design/wujian_soc/apb1.v $TARGET_DIR
 
+file copy -force $CL_DIR/design/wujian_soc/test.v $TARGET_DIR
+
 #---- End of section replaced by Developr ---
 
 # Make sure files have write permissions for the encryption
