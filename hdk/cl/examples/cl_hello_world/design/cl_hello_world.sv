@@ -67,7 +67,6 @@ logic rst_main_n_sync;
 // Reset Synchronization
 //-------------------------------------------------
 logic pre_sync_rst_n;
-wire test_wire;
 reg test_reg;
 
 always_ff @(negedge rst_main_n or posedge clk_main_a0)
@@ -75,14 +74,12 @@ always_ff @(negedge rst_main_n or posedge clk_main_a0)
    begin
       pre_sync_rst_n  <= 0;
       rst_main_n_sync <= 0;
-      test_wire <= 0;
       test_reg <= 0;
    end
    else
    begin
       pre_sync_rst_n  <= 1;
       rst_main_n_sync <= pre_sync_rst_n;
-      test_wire <= 0;
       test_reg <= 0;
    end
 
@@ -181,6 +178,8 @@ always_ff @(negedge rst_main_n or posedge clk_main_a0)
    logic        rvalid;
    logic [31:0] rdata;
    logic [1:0]  rresp;
+   wire test_wire;
+   assign test_wire = 0;
 
    // Inputs
    assign awvalid         = sh_ocl_awvalid_q;
