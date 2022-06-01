@@ -527,7 +527,7 @@ wujian100_open_top wujian100_open_fpga_top(
   .PAD_USI2_SCLK (test_wire),
   .PAD_USI2_SD0 (test_wire),
   .PAD_USI2_SD1 (test_wire),
-  .PIN_EHS (test_wire),
+  .PIN_EHS (test_reg),
   .POUT_EHS (test_wire)
 );
 
