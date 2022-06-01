@@ -5,7 +5,7 @@ test_output,
 test_inout
 );
 
-inout clk;
+input clk;
 input test_input;
 output test_output;
 inout test_inout;

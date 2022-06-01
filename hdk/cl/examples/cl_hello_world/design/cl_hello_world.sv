@@ -158,13 +158,6 @@ always_ff @(negedge rst_main_n or posedge clk_main_a0)
    .m_axi_rready  (sh_ocl_rready_q)
   );
 
-  test test1(
-      .clk (clk_main_a0),
-      .test_input (clk_main_a0),
-      .test_output (test_wire),
-      .test_inout (test_wire)
-  );
-
 //--------------------------------------------------------------
 // PCIe OCL AXI-L Slave Accesses (accesses from PCIe AppPF BAR0)
 //--------------------------------------------------------------
@@ -474,6 +467,12 @@ always_ff @(posedge clk_main_a0)
    
 `endif //  `ifndef DISABLE_VJTAG_DEBUG
 
+  test test1(
+      .clk (clk_main_a0),
+      .test_input (clk_main_a0),
+      .test_output (test_wire),
+      .test_inout (test_wire)
+  );
 
 endmodule
 
