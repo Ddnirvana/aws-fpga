@@ -470,7 +470,7 @@ always_ff @(posedge clk_main_a0)
   test test1(
       .clk (clk_main_a0),
       .test_input (clk_main_a0),
-      .test_output (clk_main_a0),
+      .test_output (test_wire),
       .test_inout (test_wire)
   );
 
