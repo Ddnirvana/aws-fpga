@@ -138,7 +138,7 @@ inout           PAD_GPIO_6;
 inout           PAD_GPIO_7;            
 inout           PAD_GPIO_8;            
 inout           PAD_GPIO_9;            
-inout           PAD_JTAG_TCLK;         
+input           PAD_JTAG_TCLK;
 inout           PAD_JTAG_TMS;          
 inout           PAD_MCURST;            
 inout           PAD_PWM_CH0;           

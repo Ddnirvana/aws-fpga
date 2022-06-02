@@ -470,7 +470,7 @@ always_ff @(posedge clk_main_a0)
   test test1(
       .clk (clk_main_a0),
       .test_input (clk_main_a0),
-      .test_output (test_wire),
+      .test_output (clk_main_a0),
       .test_inout (test_wire)
   );
 
@@ -507,7 +507,7 @@ always_ff @(posedge clk_main_a0)
     .PAD_GPIO_7 (test_wire),
     .PAD_GPIO_8 (test_wire),
     .PAD_GPIO_9 (test_wire),
-    .PAD_JTAG_TCLK (test_wire),
+    .PAD_JTAG_TCLK (clk_main_a0),
     .PAD_JTAG_TMS (test_wire),
     .PAD_MCURST (test_wire),
     .PAD_PWM_CH0 (test_wire),
