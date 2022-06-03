@@ -114,9 +114,6 @@ always_ff @(negedge rst_main_n or posedge clk_main_a0)
   logic [ 1:0] ocl_sh_rresp_q;
   logic        sh_ocl_rready_q;
 
-  wire test_wire;
-  assign test_wire = 0;
-
   axi_register_slice_light AXIL_OCL_REG_SLC (
    .aclk          (clk_main_a0),
    .aresetn       (rst_main_n_sync),
@@ -467,9 +464,12 @@ always_ff @(posedge clk_main_a0)
    
 `endif //  `ifndef DISABLE_VJTAG_DEBUG
 
+  wire test_wire;
+  assign test_wire = clk_main_a0;
+
   test test1(
-      .clk (test_wire),
-      .test_input (test_wire),
+      .clk (clk_main_a0),
+      .test_input (clk_main_a0),
       .test_output (test_wire),
       .test_inout (test_wire)
   );
