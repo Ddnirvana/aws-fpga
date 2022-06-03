@@ -461,8 +461,9 @@ always_ff @(posedge clk_main_a0)
    
 `endif //  `ifndef DISABLE_VJTAG_DEBUG
 
+  input test_input;
   wire test_wire;
-  assign test_wire = 0;
+  assign test_wire = test_input;
 
   test test1(
       .clk (clk_main_a0),
@@ -506,7 +507,7 @@ always_ff @(posedge clk_main_a0)
     .PAD_GPIO_9 (test_wire),
     .PAD_JTAG_TCLK (clk_main_a0),
     .PAD_JTAG_TMS (test_wire),
-    .PAD_MCURST (test_wire),
+    .PAD_MCURST (clk_main_a0),
     .PAD_PWM_CH0 (test_wire),
     .PAD_PWM_CH1 (test_wire),
     .PAD_PWM_CH10 (test_wire),
