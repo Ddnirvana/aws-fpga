@@ -468,7 +468,7 @@ always_ff @(posedge clk_main_a0)
 PAD_DIG_IO  test_PAD_DIG_IO (
   .ID                  (test_wire),
   .IEN                 (1'b0),
-  .OD                  (1'b0,
+  .OD                  (1'b0),
   .OEN                 (1'b1),
   .PAD                 (clk_main_a0)
 );
