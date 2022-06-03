@@ -67,20 +67,17 @@ logic rst_main_n_sync;
 // Reset Synchronization
 //-------------------------------------------------
 logic pre_sync_rst_n;
-reg test_reg;
 
 always_ff @(negedge rst_main_n or posedge clk_main_a0)
    if (!rst_main_n)
    begin
       pre_sync_rst_n  <= 0;
       rst_main_n_sync <= 0;
-      test_reg <= 0;
    end
    else
    begin
       pre_sync_rst_n  <= 1;
       rst_main_n_sync <= pre_sync_rst_n;
-      test_reg <= 0;
    end
 
 //-------------------------------------------------
@@ -465,7 +462,7 @@ always_ff @(posedge clk_main_a0)
 `endif //  `ifndef DISABLE_VJTAG_DEBUG
 
   wire test_wire;
-  assign test_wire = clk_main_a0;
+  assign test_wire = 0;
 
   test test1(
       .clk (clk_main_a0),
