@@ -506,7 +506,7 @@ always_ff @(posedge clk_main_a0)
     .PAD_GPIO_9 (test_wire),
     .PAD_JTAG_TCLK (clk_main_a0),
     .PAD_JTAG_TMS (test_wire),
-    .PAD_MCURST (clk_main_a0),
+    .PAD_MCURST (rst_main_n_sync),
     .PAD_PWM_CH0 (test_wire),
     .PAD_PWM_CH1 (test_wire),
     .PAD_PWM_CH10 (test_wire),

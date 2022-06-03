@@ -1199,7 +1199,7 @@ PAD_DIG_IO  x_PAD_MCURST (
   .IEN          (1'b0        ),
   .OD           (1'b0        ),
   .OEN          (1'b1        ),
-  .PAD          (PAD_MCURST  )
+  .PAD          ()
 );
 
 
