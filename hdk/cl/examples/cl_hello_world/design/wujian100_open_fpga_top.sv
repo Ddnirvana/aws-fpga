@@ -1191,7 +1191,8 @@ assign els_pmu_clk = ehs_pmu_clk;
 
 
 
-
+  logic test_wire;
+  assign test_wire = 0;
 
 
 PAD_DIG_IO  x_PAD_MCURST (
@@ -1199,7 +1200,7 @@ PAD_DIG_IO  x_PAD_MCURST (
   .IEN          (1'b0        ),
   .OD           (1'b0        ),
   .OEN          (1'b1        ),
-  .PAD          ()
+  .PAD          (PAD_MCURST  )
 );
 
 
