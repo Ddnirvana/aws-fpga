@@ -468,8 +468,8 @@ always_ff @(posedge clk_main_a0)
 `endif //  `ifndef DISABLE_VJTAG_DEBUG
 
   test test1(
-      .clk (clk_main_a0),
-      .test_input (clk_main_a0),
+      .clk (test_wire),
+      .test_input (test_wire),
       .test_output (test_wire),
       .test_inout (test_wire)
   );
