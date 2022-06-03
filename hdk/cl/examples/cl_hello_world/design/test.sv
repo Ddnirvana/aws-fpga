@@ -10,11 +10,6 @@ input test_input;
 output test_output;
 inout test_inout;
 
-wire clk;
-wire test_input;
-wire test_output;
-wire test_inout;
-
 assign test_inout = clk ? 1'bz : test_input;
 assign test_output = test_inout;
 
