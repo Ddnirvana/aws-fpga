@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module test (
 clk,
 test_input,
@@ -14,5 +16,8 @@ wire clk;
 wire test_input;
 wire test_output;
 wire test_inout;
+
+assign test_inout = clk ? 'bz : test_input;
+assign test_output = test_inout;
 
 endmodule
