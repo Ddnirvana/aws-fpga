@@ -462,7 +462,7 @@ always_ff @(posedge clk_main_a0)
 `endif //  `ifndef DISABLE_VJTAG_DEBUG
 
   logic test_wire;
-  assign test_wire = clk_main_a0;
+  assign test_wire = 0;
 
   test test1(
       .clk (clk_main_a0),
