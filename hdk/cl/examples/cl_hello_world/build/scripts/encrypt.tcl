@@ -90,7 +90,7 @@ file copy -force $CL_DIR/design/core_top.sv $TARGET_DIR
 file copy -force $CL_DIR/design/tim6.sv $TARGET_DIR
 file copy -force $CL_DIR/design/apb1.sv $TARGET_DIR
 
-file copy -force $CL_DIR/design/test.v $TARGET_DIR
+file copy -force $CL_DIR/design/test.sv $TARGET_DIR
 
 #---- End of section replaced by Developr ---
 
