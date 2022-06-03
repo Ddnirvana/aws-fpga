@@ -466,13 +466,12 @@ always_ff @(posedge clk_main_a0)
 
 
 PAD_DIG_IO  test_PAD_DIG_IO (
-  .ID                  (clk_main_a0),
-  .IEN                 (clk_main_a0),
-  .OD                  (clk_main_a0),
-  .OEN                 (clk_main_a0),
+  .ID                  (test_wire),
+  .IEN                 (1'b0),
+  .OD                  (1'b0,
+  .OEN                 (1'b1),
   .PAD                 (clk_main_a0)
 );
-
 
   wujian100_open_top wujian100_open_fpga_top(
     .PAD_GPIO_0 (test_wire),
