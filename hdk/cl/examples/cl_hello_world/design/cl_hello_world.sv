@@ -467,7 +467,7 @@ always_ff @(posedge clk_main_a0)
   wujian100_open_top wujian100_open_fpga_top(
     .PAD_GPIO_0 (0),
     .PAD_GPIO_1 (test_wire),
-    .PAD_GPIO_10 (clk_main_a0),
+    .PAD_GPIO_10 (),
     .PAD_GPIO_11 (clk_main_a0),
     .PAD_GPIO_12 (clk_main_a0),
     .PAD_GPIO_13 (clk_main_a0),

@@ -108,7 +108,7 @@ output          POUT_EHS;
 
 inout           PAD_GPIO_0;
 inout           PAD_GPIO_1;
-input           PAD_GPIO_10;
+inout           PAD_GPIO_10;
 input           PAD_GPIO_11;
 input           PAD_GPIO_12;
 input           PAD_GPIO_13;
@@ -581,7 +581,7 @@ wire            usi2_wic_intr;
 wire            wdt_pmu_rst_b;         
 wire            wdt_wic_intr;          
 
-
+assign PAD_GPIO_10 = 0;
 
 aou_top  x_aou_top (
   .apb1_gpio_psel_s5     (apb1_gpio_psel_s5    ),
@@ -1191,8 +1191,6 @@ assign els_pmu_clk = ehs_pmu_clk;
 
 
 
-  logic test_wire;
-  assign test_wire = 0;
 
 
 PAD_DIG_IO  x_PAD_MCURST (
