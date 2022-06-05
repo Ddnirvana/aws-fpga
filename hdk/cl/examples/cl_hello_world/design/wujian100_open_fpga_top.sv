@@ -106,7 +106,7 @@ input           PIN_EHS;
 
 output          POUT_EHS;              
 
-input           PAD_GPIO_0;
+inout           PAD_GPIO_0;
 input           PAD_GPIO_1;
 input           PAD_GPIO_10;
 input           PAD_GPIO_11;
@@ -232,7 +232,7 @@ wire            PAD_USI2_SD0;
 wire            PAD_USI2_SD1;          
 wire            PIN_EHS;               
 
-wire            POUT_EHS;              
+wire            POUT_EHS;
 
 wire            apb0_dummy1_intr;      
 wire            apb0_dummy2_intr;      
