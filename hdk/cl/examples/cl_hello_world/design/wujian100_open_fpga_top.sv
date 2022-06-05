@@ -107,7 +107,7 @@ input           PIN_EHS;
 output          POUT_EHS;              
 
 inout           PAD_GPIO_0;
-input           PAD_GPIO_1;
+inout           PAD_GPIO_1;
 input           PAD_GPIO_10;
 input           PAD_GPIO_11;
 input           PAD_GPIO_12;
